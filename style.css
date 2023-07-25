@@ -1,0 +1,75 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 0;
+    margin-top: 10px;  
+    margin-left: 0px;
+    background-color:lawngreen;
+}
+
+.card {
+    height: 40px;
+    width: 40px;
+    border: 3px solid red;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: inline-block;
+    background-size: cover;
+    position: absolute;
+    transition: all .5s;
+}
+
+.card1 {
+    background-image: url("images/1.jpeg");
+}
+
+.card2 {
+    background-image: url("images/2.jpeg");
+}
+
+.card3 {
+    background-image: url("images/3.jpeg");
+}
+
+.card4 {
+    background-image: url("images/4.jpeg");
+}
+
+.card5 {
+    background-image: url("images/5.jpeg");
+}
+
+.card6 {
+    background-image: url("images/6.jpeg");
+}
+
+.card7 {
+    background-image: url("images/7.jpeg");
+}
+
+#myCards {
+    width: 90%;
+    height: 10%;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    left: 5%;
+    bottom: 10%;
+    box-sizing: border-box;
+    border: 2px solid burlywood;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: calc((90% - 40px*7)/2);
+}
+
+
+#playarea {
+    width: 90%;
+    height: 70%;
+    background-color: greenyellow;
+    margin: 0 auto;
+    padding: 10px;
+}

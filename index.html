@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div id="playarea">
+    </div>
+
+    <div id="myCards">
+    </div>
+
+
+    <button id="kaiqi">开启bgm</button>
+    <button id="guanbi">关闭bgm</button>
+
+    <script>
+
+        a = document.createElement('audio')
+        a.src = 'bgm.mp3'
+        const HTML = document.getElementsByTagName('body')[0]
+        HTML.appendChild(a)
+        document.getElementById('kaiqi').addEventListener('click', () => {
+            a.play()
+        })
+        document.getElementById('guanbi').addEventListener('click', () => {
+            a.pause()
+        })
+
+    </script>
+
+
+
+</body>
+
+<script src="main.js"></script>
+
+</html>
